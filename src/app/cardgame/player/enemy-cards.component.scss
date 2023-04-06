@@ -1,0 +1,41 @@
+
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 80%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-color: #ff9000;
+  height: 150px;
+  width: 100px;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.card-attack {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-defense {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}

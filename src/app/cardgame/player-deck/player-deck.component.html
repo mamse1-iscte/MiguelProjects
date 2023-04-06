@@ -1,0 +1,12 @@
+
+  <div class="deck-container">
+    <div class="card-list">
+      <div class="card" *ngFor="let card of cards" [ngStyle]="{ 'transform': card.hover ? 'scale(1.2)' : 'none' }" (mouseover)="card.hover = true" (mouseout)="card.hover = false" (click)="selectCard(card)">
+        <div class="card-attack">{{ card.attack }}</div>
+        <div class="card-defense">{{ card.defense }}</div>
+      </div>
+    </div>
+    <div class="cards-remaining">
+      <span>{{ remainingCards }}</span>
+    </div>
+  </div>

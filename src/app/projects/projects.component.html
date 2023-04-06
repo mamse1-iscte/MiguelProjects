@@ -1,0 +1,13 @@
+<div class="card-list">
+  <div class="card" *ngFor="let project of projects">
+    <a [routerLink]="project.link">
+      <p>{{ project.title }}</p>
+      <div class="card-image">
+        <img *ngIf="project.imageUrl" [src]="project.imageUrl" alt="{{ project.title }}">
+      </div>
+      <div class="card-content">
+        <p>{{ project.description }}</p>
+      </div>
+    </a>
+  </div>
+</div>

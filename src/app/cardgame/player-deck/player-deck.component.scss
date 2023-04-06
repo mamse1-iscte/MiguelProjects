@@ -1,0 +1,63 @@
+.card-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 80%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #6a1188;
+  height: 100px;
+  width: 80px;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(10px);
+  height: 110px;
+  width: 90px;
+  z-index: 1;
+}
+
+.card-attack {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-defense {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.cards-remaining {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6c0000;
+  height: 30px;
+  width: 60px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  font-weight: bold;
+}
